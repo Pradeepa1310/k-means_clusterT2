@@ -33,5 +33,59 @@ The project includes data cleaning, feature engineering, feature scaling, cluste
 
 The notebook reads the dataset from:
 
+
+1. **Load Dataset**  
+   Import the `sales2.xlsx` dataset using Pandas.
+
+2. **Explore Data**  
+   Use `head()` and `info()` to understand the dataset.
+
+3. **Check Missing Values**  
+   Identify missing values using `df.isnull().sum()`.
+
+4. **Clean Data**  
+   Remove missing Customer IDs, cancelled invoices, invalid transactions, and duplicates.
+
+5. **Create Total Amount**  
+   Calculate transaction value using:
+   `TotalAmount = Quantity × Price`
+
+6. **Perform RFM Analysis**  
+   Calculate:
+   - Recency
+   - Frequency
+   - Monetary
+
+7. **Scale Features**  
+   Standardize RFM features using `StandardScaler`.
+
+8. **Apply K-Means**  
+   Use the Elbow Method and apply K-Means clustering with **2 clusters**.
+
+9. **Evaluate & Visualize**  
+   Evaluate clusters using Silhouette Score and Davies-Bouldin Index and visualize the customer clusters.
+
+10. **Interpret Results**  
+    Analyze the cluster characteristics to understand different customer purchasing behaviors.
+
+## Results
+
+- **Clusters:** 2
+- **Silhouette Score:** 0.9314175603189809
+- **Davies-Bouldin Index:** 0.5834201660128137
+
+## Technologies
+
+- Python
+- Pandas
+- Scikit-learn
+- Matplotlib
+- Google Colab
+- Excel
+
+## Project
+
+**Customer Segmentation Using RFM Analysis and K-Means Clustering**
+
 ```text
 /content/sales2.xlsx
